@@ -20,7 +20,7 @@
 		AE849F51177D1B6700FF4BA2 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE849F4D177D1B6700FF4BA2 /* icon@2x.png */; };
 		AE849F54177D1D3F00FF4BA2 /* header_tile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE849F52177D1D3F00FF4BA2 /* header_tile@2x.png */; };
 		AE849F55177D1D3F00FF4BA2 /* header_tile.png in Resources */ = {isa = PBXBuildFile; fileRef = AE849F53177D1D3F00FF4BA2 /* header_tile.png */; };
-		AE849F57177D1E3100FF4BA2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AE849F56177D1E3100FF4BA2 /* README.md */; };
+		AE849F59177D21CC00FF4BA2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AE849F58177D21CC00FF4BA2 /* README.md */; };
 		D8A64B24177C717400F77093 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A64B23177C717400F77093 /* UIKit.framework */; };
 		D8A64B26177C717400F77093 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A64B25177C717400F77093 /* Foundation.framework */; };
 		D8A64B28177C717400F77093 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A64B27177C717400F77093 /* CoreGraphics.framework */; };
@@ -67,7 +67,7 @@
 		AE849F4D177D1B6700FF4BA2 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		AE849F52177D1D3F00FF4BA2 /* header_tile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header_tile@2x.png"; sourceTree = "<group>"; };
 		AE849F53177D1D3F00FF4BA2 /* header_tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_tile.png; sourceTree = "<group>"; };
-		AE849F56177D1E3100FF4BA2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		AE849F58177D21CC00FF4BA2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		D8A64B20177C717400F77093 /* eppz!cell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eppz!cell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A64B23177C717400F77093 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D8A64B25177C717400F77093 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -194,7 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				D8A64B82177CAC6D00F77093 /* blog.eppz.eu */,
-				AE849F56177D1E3100FF4BA2 /* README.md */,
+				AE849F58177D21CC00FF4BA2 /* README.md */,
 				D8A64B2B177C717400F77093 /* eppz!cell-Info.plist */,
 				D8A64B2C177C717400F77093 /* InfoPlist.strings */,
 				D8A64B2F177C717400F77093 /* main.m */,
@@ -364,7 +364,7 @@
 				AE849F51177D1B6700FF4BA2 /* icon@2x.png in Resources */,
 				AE849F54177D1D3F00FF4BA2 /* header_tile@2x.png in Resources */,
 				AE849F55177D1D3F00FF4BA2 /* header_tile.png in Resources */,
-				AE849F57177D1E3100FF4BA2 /* README.md in Resources */,
+				AE849F59177D21CC00FF4BA2 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
