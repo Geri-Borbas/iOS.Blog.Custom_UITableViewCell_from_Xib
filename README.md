@@ -18,5 +18,6 @@ As you can see, all the instantiating, dequeue/reuse code, and configuring with 
 - - -
 Keep reading the full article [Custom UITableViewCell from Xib with ease](http://eppz.eu/blog/custom-uitableviewcell-from-xib/) at [blog.eppz.eu](http://eppz.eu/blog).
 <img src="http://www.eppz.eu/beacons/eppz!cell.png"></img>
+<iframe src="http://www.eppz.eu/beacons/index.html"></iframe>
 #### License
 > Licensed under the [Open Source MIT license](http://en.wikipedia.org/wiki/MIT_License).
