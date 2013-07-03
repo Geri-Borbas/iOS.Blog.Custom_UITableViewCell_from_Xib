@@ -28,12 +28,20 @@
     self.titleLabel.text = [model valueForKey:@"title"];
     self.authorLabel.text = [[model valueForKey:@"author"] uppercaseString];
     
-    //Formatting date.
-    NSDateFormatter *dateFormatter = [NSDateFormatter new];
+    //(Re)formatting date.
+    NSString *dateString = [model valueForKey:@"publishedDate"] ; //Get.
+
+    __block NSDate *publishedDate; //Parse.
+    NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingAllTypes error:nil];
+    [detector enumerateMatchesInString:dateString
+                               options:kNilOptions
+                                 range:NSMakeRange(0, [dateString length])
+                            usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) { publishedDate = result.date; }];
+    
+    NSDateFormatter *dateFormatter = [NSDateFormatter new]; //Format.
     dateFormatter.dateStyle = NSDateFormatterFullStyle;
-    NSDate *publishedDate = [NSDate dateWithTimeIntervalSince1970:[[model valueForKey:@"published"] floatValue]];
-    NSString *dateString = [dateFormatter stringFromDate:publishedDate];
-    self.dateLabel.text = dateString;
+    NSString *dateDisplayString = [dateFormatter stringFromDate:publishedDate];
+    self.dateLabel.text = dateDisplayString; //Display.  
 }
 
 @end

@@ -15,7 +15,8 @@
 #import "TCItemCell.h"
 
 
-static NSString *const _feedUrl = @"http://www.google.com/reader/public/javascript/feed/http://feeds.feedburner.com/Techcrunch?n=100";
+static NSString *const _feedUrl = @"http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&q=http://feeds.feedburner.com/TechCrunch/";
+
 
 @interface EPPZViewController () <EPPZTableViewCellModelSource>
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
@@ -42,13 +43,13 @@ static NSString *const _feedUrl = @"http://www.google.com/reader/public/javascri
 #pragma mark - Populate table
 
 -(NSInteger)tableView:(UITableView*) tableView numberOfRowsInSection:(NSInteger) section
-{ return [[self.feed valueForKey:@"items"] count]; }
+{ return [[self.feed valueForKeyPath:@"responseData.feed.entries"] count]; }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*) indexPath
 { return [TCItemCell heightForTableView:tableView atIndexPath:(NSIndexPath*) indexPath]; }
 
 -(id)modelForIndexPath:(NSIndexPath*) indexPath
-{ return [[self.feed valueForKey:@"items"] objectAtIndex:indexPath.row]; }
+{ return [[self.feed valueForKeyPath:@"responseData.feed.entries"] objectAtIndex:indexPath.row]; }
 
 -(UITableViewCell*)tableView:(UITableView*) tableView cellForRowAtIndexPath:(NSIndexPath*) indexPath
 {
