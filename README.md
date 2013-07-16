@@ -15,3 +15,9 @@ Having some well designed base class, the concrete implementation can free of an
 }
 ```
 As you can see, all the instantiating, dequeue/reuse code, and configuring with model object is encapsulated within the actual `UITableViewCell` subclass. It uses a base class `EPPZTableViewCell : NSObject` to be introduced soon below, then extending it by adding some concrete features of the TechCrunch themed custom `UITableViewCell`.
+___
+Keep reading [Custom UITableViewCell from Xib with ease](http://eppz.eu/blog/custom-uitableviewcell-from-xib/) at [blog.eppz.eu](http://eppz.eu/blog).
+#### License
+> Licensed under the [Open Source MIT license](http://en.wikipedia.org/wiki/MIT_License).
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/83efbd77ad865b1d7d2646907be3238f "githalytics.com")](http://githalytics.com/eppz/eppz-cell)
