@@ -23,3 +23,7 @@ Keep reading [Custom UITableViewCell from Xib with ease](http://eppz.eu/blog/cus
 > Licensed under the [Open Source MIT license](http://en.wikipedia.org/wiki/MIT_License).
 
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/83efbd77ad865b1d7d2646907be3238f "githalytics.com")](http://githalytics.com/eppz/eppz-cell)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/eppz/eppz-cell/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
